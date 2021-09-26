@@ -37,9 +37,12 @@
     <!-- <div class="flex-container"> -->
     <div class="div1">
       <div class="div1container">
-        <h1 class="textsizing">Next generation<br>digital banking</h1>
-        <p class="paragraphforfirst">Take your financial life online. Your Easybank account<br>will be a
-          one-stop-shop for spending, saving,<br> budgeting, investing, and much more.
+        <div class="div1containerforphone">
+          <img src="./images/image-mockups.png" id="img2formobile-width"/>
+       </div>
+        <h1 class="textsizing">Next generation<br>digital banking</h1><br>
+        <p class="paragraphforfirst">Take your financial life online. Your Easybank account will be a
+          one-stop-shop for spending, saving, budgeting, investing, and much more.
           </p>
           <button id="btn1">Request Inivite</button>  
         </div>
@@ -203,5 +206,12 @@
         <button id="btn2">Request Inivite</button>
       </div>
     </div>
+    <script>
+      const toggleButton = document.getElementsByClassName('toggle-button')[0]
+      const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+      toggleButton.addEventListener('click', () => {
+         navbarLinks.classList.toggle('active')
+       })
+    </script>
   </body>
 </html>
