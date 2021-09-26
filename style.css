@@ -61,7 +61,7 @@ body{
         height: 3px;
         width: 100%;
         border-radius: 10px;
-        color:blue;
+        color:black;
     }
     #img-width{
         margin-left:12.5rem;
@@ -128,8 +128,10 @@ body{
     }
     
     .div1container1{
-        width:50vw;
-        
+        width:50vw;   
+    }
+    .div1containerforphone{
+        display:none;
     }
     
     #img1-width{
@@ -431,7 +433,9 @@ body{
         width:50vw;
         
     }
-    
+    .div1containerforphone{
+        display:none;
+    }
     #img1-width{
         width:50vw;
         height:15rem;
@@ -632,8 +636,112 @@ body{
     }
 }    
 @media screen and (max-width:410px){
-    .navbar{
+    .navbar {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color:white;
+        color:grey;
+    }
+    
+    .brand-title {
+        font-size: 1.5rem;
+        margin: .5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+    }
+    
+    .navbar-links li a {
+        display: block;
+        text-decoration: none;
+        color:grey;
+        padding: 1rem;
+    }
+    
+    .navbar-links li:hover {
+        background-image:linear-gradient(to right,hsl(136,65%,51%),hsl(192,70%,51%));;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color:grey;
+        border-radius: 10px;
+    }
+    
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+    #btn{
         display:none;
+    }
+    #btn{
+        display:none;
+    }
+    #img-width{
+        margin-left:0rem;
+    }
+    .div1containerforphone{
+        width:100%;
+        background-image:url("./images/bg-intro-mobile.svg");
+        background-repeat: no-repeat;
+        display:block;
+    }
+    #img2formobile-width{
+        height:28rem;
+        margin-left:-4.7rem;
+        margin-top:-7.5rem;
     }
     .div1{
         width:100vw;
@@ -652,7 +760,7 @@ body{
         
     }
     
-    #img1-width{
+    /* #img1-width{
         width:50vw;
         height:45vh;
         margin-top:-50px;
@@ -666,15 +774,27 @@ body{
         margin-top:30px;
         z-index:1;
         transform:translate(240px,-300px);
-    }
+    } */
     .textsizing{
         color: hsl(233, 26%, 24%);
-        margin-top:150px;
+        margin-top:100px;
         margin-left:2rem;;
     }
      .paragraphforfirst{
         margin-left:2rem;
      }
+     #btn1{
+        height:40px;
+        width:8rem;;
+        border-radius:15px;
+        border:none;
+        margin-right:60px;
+        background-image:linear-gradient(to right,hsl(136,65%,51%),hsl(192,70%,51%));
+        color:white;
+        cursor:pointer;
+        margin-left:40px;
+        margin-top:20px;
+    } 
     
     .div2{
         width:100%;
@@ -765,6 +885,22 @@ body{
         color:grey;
     }
     .footer{
-        display:none;
+        width:100%;
+        background-color:hsl(233, 26%, 24%);
+        display:flex;
+        flex-wrap:wrap;
+        
+    }
+    .footerpart1{
+        margin-right:10rem;
+    }
+    .footerpart2{
+        margin-top:-0.75rem;
+        margin-right:2rem;
+    }
+    .footerpart3{
+        margin-top:-1.5rem;
+        /* margin-right:1rem; */
+        margin-left:-1rem;
     }
 }
