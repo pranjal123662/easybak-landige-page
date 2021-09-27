@@ -304,6 +304,7 @@ body{
     .social-icons{
         display:flex;
         margin-left:-35px;
+        gap:2rem;
     }
     
     .social-icons li a img:hover {
@@ -314,7 +315,6 @@ body{
         list-style: none;
         display:flex;
         flex-direction:row;
-        gap:1rem;
         justify-content:center;
     
     }
@@ -635,7 +635,7 @@ body{
        border:none;
     }
 }    
-@media screen and (max-width:410px){
+@media screen and (max-width:450px){
     .navbar {
         display: flex;
         position: relative;
